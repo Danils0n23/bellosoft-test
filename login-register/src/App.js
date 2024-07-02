@@ -7,22 +7,27 @@ import {
   FormWrapper,
   ToggleLink,
 } from "../src/components/styled-components";
-import { FaArrowCircleLeft } from "react-icons/fa";
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(true);
+
+  const getToggleTextParts = () => {
+    return isLogin
+      ? ["Don't have an account?", " Create Now"]
+      : ["Already have an account?", " Login Now"];
+  };
+
+  const [questionPart, actionPart] = getToggleTextParts();
 
   return (
     <Fragment>
       <GlobalStyle />
       <Container>
         <FormWrapper>
-        <FaArrowCircleLeft />
           {isLogin ? <LoginForm /> : <RegisterForm />}
           <ToggleLink onClick={() => setIsLogin(!isLogin)}>
-            {isLogin
-              ? "Don't have an account? Create Now"
-              : "Already have an account? Login Now"}
+            <span className="gray-text">{questionPart}</span>
+            {actionPart}
           </ToggleLink>
         </FormWrapper>
       </Container>

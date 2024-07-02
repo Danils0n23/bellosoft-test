@@ -16,11 +16,13 @@ import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BsPhoneFill } from "react-icons/bs";
 import { RiLockFill } from 'react-icons/ri';
+import { FaArrowCircleLeft } from "react-icons/fa";
 
 const RegisterForm = () => (
   <Form>
+   <div><FaArrowCircleLeft /></div> 
     <Title>Create Account</Title>
-    <Subtitle>Enter your information below or continue with social media account</Subtitle>
+    <Subtitle className='justify-items'>Enter your information below  or continue<br />  with social media account</Subtitle>
     <InputWrapper>
       <IconWrapper><FaEnvelope /></IconWrapper>
       <Input type="email" placeholder="Your email address" required />

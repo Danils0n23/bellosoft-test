@@ -23,6 +23,18 @@ export const Container = styled.div`
   height: 100vh;
 `;
 
+export const FaArrowCircleLeft  = styled.div`
+  width: 32px;
+  height: 32px;
+  top: 98px;
+  left: 64px;
+  padding: 2px 0px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+  angle: 180 deg;
+
+`;
+
 export const FormWrapper = styled.div`
   padding: 2rem;
   width: 100%;
@@ -36,8 +48,6 @@ export const Form = styled.form`
 `;
 
 export const Title = styled.h1`
-  width: 66px;
-  height: 28px;
   top: 127px;
   left: 3px;
   gap: 0px;
@@ -47,19 +57,16 @@ export const Title = styled.h1`
   font-weight: 400;
   line-height: 28.08px;
   text-align: left;
-
-
 `;
 
 export const Subtitle = styled.p`
-  width: 164px;
-  height: 38px;
-  top: 178px;
-  left: 32px;
-  gap: 0px;
   opacity: 0px;
-  color: gray;
-
+  font-family: Tenor Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.32px;
+  text-align: left;
+  color: rgba(139, 139, 139, 1);
 `;
 
 export const InputWrapper = styled.div`
@@ -189,9 +196,10 @@ export const EyeIcon = styled(VscEye)`
 `;
 
 export const ToggleLink = styled.a`
-  text-align: center;
-  color: #a0522d;
   cursor: pointer;
-  display: block;
-  margin-top: 1rem;
+  color: #a0522d;
+;
+  .gray-text {
+    color: gray;
+  }
 `;

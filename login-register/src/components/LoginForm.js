@@ -2,12 +2,14 @@ import React from 'react';
 import { Form, Title, Subtitle, InputWrapper, IconWrapper, Input, Button, ForgotPassword, Divider,SocialIcons,SocialIcon,EyeIcon} from './styled-components';
 import { FaEnvelope, FaApple, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
+import { FaArrowCircleLeft } from "react-icons/fa";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { RiLockFill } from 'react-icons/ri';
 const LoginForm = () => (
   <Form>
+  <div><FaArrowCircleLeft /></div>  
     <Title>Login</Title>
-    <Subtitle>Welcome back! Please login to continue</Subtitle>
+    <Subtitle>Welcome back!<br /> Please login to continue</Subtitle>
     <InputWrapper>
       <IconWrapper><FaEnvelope /></IconWrapper>
       <Input id="email" type="email" placeholder="Your email address" required />
