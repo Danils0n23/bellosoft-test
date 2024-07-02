@@ -16,39 +16,16 @@ import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BsPhoneFill } from "react-icons/bs";
 import { RiLockFill } from 'react-icons/ri';
-import { FaArrowCircleLeft } from "react-icons/fa";
 
 const RegisterForm = () => (
   <Form>
-    <FaArrowCircleLeft style={{ color: 'grey', fontSize: '2em' }} />
+    
     <Title>Create Account</Title>
-    <Subtitle className='justify-items'>Enter your information below  or continue<br />  with social media account</Subtitle>
+    <Subtitle>Enter your information below or continue with social media account</Subtitle>
     <InputWrapper>
-        <IconWrapper>
-          <FaEnvelope />
-        </IconWrapper>
-        <div style={{ position: 'relative' }}>
-          <Input
-            id="email"
-            type="email"
-            value="Email Address"
-            style={{ marginBottom: '20px' }}
-            required
-          />
-          <span
-            style={{
-              position: 'absolute',
-              top: '32px',
-              left: 6,
-              color: '#aaa',
-              fontSize: '0.8em',
-              pointerEvents: 'none',
-            }}
-          >
-            Your email address
-          </span>
-        </div>
-      </InputWrapper>
+      <IconWrapper><FaEnvelope /></IconWrapper>
+      <Input type="email" placeholder="Your email address" required />
+    </InputWrapper>
     <InputWrapper>
       <IconWrapper><BsPhoneFill /></IconWrapper>
       <Input type="tel" placeholder="Your mobile number" required />
@@ -56,7 +33,6 @@ const RegisterForm = () => (
     <InputWrapper>
       <IconWrapper><RiLockFill/></IconWrapper>
       <Input type="password" placeholder="Create password" required />
-      <IconWrapper></IconWrapper>
     </InputWrapper>
     <Button>Create Account</Button>
     <Divider>Or Register with Social Accounts</Divider>

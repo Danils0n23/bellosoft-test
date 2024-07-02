@@ -17,9 +17,12 @@ import { FcGoogle } from 'react-icons/fc';
 import { BiLogoFacebookCircle } from 'react-icons/bi';
 import { RiLockFill } from 'react-icons/ri';
 import { FaArrowCircleLeft } from 'react-icons/fa';
+import { VscEye, VscEyeClosed } from 'react-icons/vsc';
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -42,7 +45,9 @@ const LoginForm = () => {
           <Input
             id="email"
             type="email"
-            value="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email Address"
             style={{ marginBottom: '20px' }}
             required
           />
@@ -64,41 +69,43 @@ const LoginForm = () => {
       <InputWrapper>
         <IconWrapper>
           <RiLockFill />
+        </IconWrapper>
+
+        <div style={{ position: 'relative' }}>
+          <Input
+            id="password"
+            type={showPassword ? 'text' : 'password'}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            style={{ marginBottom: '20px' }}
+            required
+          />
           <div
             style={{
               position: 'absolute',
-              right: '10px',
+              right: '-10px',
               top: '50%',
               transform: 'translateY(-50%)',
               cursor: 'pointer',
             }}
             onClick={togglePasswordVisibility}
           >
-            
-          </div>
-        </IconWrapper>
-
-        <div style={{ position: 'relative' }}>
-        <Input
-            id="password"
-            value="Password"
-            style={{ marginBottom: '20px' }}
-            required
-          />
+            {showPassword ? <VscEyeClosed /> : <VscEye />}
+          </div> 
           <span
-           style={{
-            position: 'absolute',
-            top: '32px',
-            left: 6,
-            color: '#aaa',
-            fontSize: '0.8em',
-            pointerEvents: 'none',
-          }}
+            style={{
+              position: 'absolute',
+              top: '32px',
+              left: 6,
+              color: '#aaa',
+              fontSize: '0.8em',
+              pointerEvents: 'none',
+            }}
           >
             Enter your password
           </span>
         </div>
-        <IconWrapper></IconWrapper>
       </InputWrapper>
 
       <Button>Login</Button>
