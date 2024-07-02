@@ -36,13 +36,30 @@ export const Form = styled.form`
 `;
 
 export const Title = styled.h1`
-  margin-bottom: 0.5rem;
+  width: 66px;
+  height: 28px;
+  top: 127px;
+  left: 3px;
+  gap: 0px;
+  opacity: 0px;2
+  font-family: Tenor Sans;
   font-size: 24px;
+  font-weight: 400;
+  line-height: 28.08px;
+  text-align: left;
+
+
 `;
 
 export const Subtitle = styled.p`
-  margin-bottom: 1rem;
-  color: #666;
+  width: 164px;
+  height: 38px;
+  top: 178px;
+  left: 32px;
+  gap: 0px;
+  opacity: 0px;
+  color: gray;
+
 `;
 
 export const InputWrapper = styled.div`

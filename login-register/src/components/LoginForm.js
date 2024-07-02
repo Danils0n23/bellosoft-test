@@ -1,32 +1,16 @@
 import React from 'react';
-import {
-  Form,
-  Title,
-  Subtitle,
-  InputWrapper,
-  IconWrapper,
-  Input,
-  Button,
-  ForgotPassword,
-  Divider,
-  SocialIcons,
-  SocialIcon,
-} from './styled-components'; // Importando apenas os estilos que estão sendo utilizados
+import { Form, Title, Subtitle, InputWrapper, IconWrapper, Input, Button, ForgotPassword, Divider,SocialIcons,SocialIcon,EyeIcon} from './styled-components';
 import { FaEnvelope, FaApple, FaTwitter } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { RiLockFill } from 'react-icons/ri';
-import { VscEye } from 'react-icons/vsc'; // Importado para uso do EyeIcon
-
-const EyeIcon = () => <VscEye />; // Criado um componente EyeIcon para resolver o aviso de variável não utilizada
-
 const LoginForm = () => (
   <Form>
     <Title>Login</Title>
     <Subtitle>Welcome back! Please login to continue</Subtitle>
     <InputWrapper>
       <IconWrapper><FaEnvelope /></IconWrapper>
-      <Input type="email" placeholder="Your email address" required />
+      <Input id="email" type="email" placeholder="Your email address" required />
     </InputWrapper>
     <InputWrapper>
       <IconWrapper><RiLockFill /></IconWrapper>
@@ -34,11 +18,11 @@ const LoginForm = () => (
       <IconWrapper><EyeIcon /></IconWrapper>
     </InputWrapper>
     <Button>Login</Button>
-    <ForgotPassword>Forgot Password?</ForgotPassword>
+    <ForgotPassword>Forgot Password</ForgotPassword>
     <Divider>Or Continue with Social Accounts</Divider>
     <SocialIcons>
-      <SocialIcon className="google"><FcGoogle /></SocialIcon>
-      <SocialIcon className="facebook"><BiLogoFacebookCircle /></SocialIcon>
+      <SocialIcon className="google"><FcGoogle  /></SocialIcon>
+      <SocialIcon className="facebook"><BiLogoFacebookCircle/></SocialIcon>
       <SocialIcon className="apple"><FaApple /></SocialIcon>
       <SocialIcon className="twitter"><FaTwitter /></SocialIcon>
     </SocialIcons>
