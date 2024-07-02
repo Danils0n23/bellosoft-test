@@ -19,7 +19,7 @@ import { RiLockFill } from 'react-icons/ri';
 
 const RegisterForm = () => (
   <Form>
-    
+     <FaArrowCircleLeft style={{ color: 'grey', fontSize: '2em' }} />
     <Title>Create Account</Title>
     <Subtitle>Enter your information below or continue with social media account</Subtitle>
     <InputWrapper>
