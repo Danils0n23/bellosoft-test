@@ -16,6 +16,7 @@ import { FcGoogle } from "react-icons/fc";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { BsPhoneFill } from "react-icons/bs";
 import { RiLockFill } from 'react-icons/ri';
+import { FaArrowCircleLeft } from 'react-icons/fa';
 
 const RegisterForm = () => (
   <Form>
