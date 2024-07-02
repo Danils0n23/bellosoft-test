@@ -1,4 +1,3 @@
-import { VscEye } from 'react-icons/vsc';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,18 +20,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-`;
-
-export const FaArrowCircleLeft  = styled.div`
-  width: 32px;
-  height: 32px;
-  top: 98px;
-  left: 64px;
-  padding: 2px 0px 0px 0px;
-  gap: 0px;
-  opacity: 0px;
-  angle: 180 deg;
-
 `;
 
 export const FormWrapper = styled.div`
@@ -77,6 +64,7 @@ export const InputWrapper = styled.div`
   border-radius: 4px;
   padding: 0.5rem;
   background: #f9f9f9;
+  
 `;
 
 export const IconWrapper = styled.div`
@@ -107,11 +95,9 @@ export const Button = styled.button`
 `;
 
 export const ForgotPassword = styled.a`
-  text-align: right;
+  text-align: center;
   color: #a0522d;
   cursor: pointer;
-  width: 311px;
-  height: 15px;
   gap: 0px;
   opacity: 0px;
   font-family: Tenor Sans;
@@ -123,9 +109,9 @@ export const ForgotPassword = styled.a`
 
 export const Divider = styled.div`
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 0; 
+   padding-top: 89px;
   color: #999;
-  width: 271px;
   height: 15px;
   gap: 0px;
   opacity: 0px;
@@ -188,18 +174,15 @@ export const SocialIcon = styled.div`
   }
 `;
 
-export const EyeIcon = styled(VscEye)`
-  width: 19.45px;
-  height: 11.5px;
-  top: 5.5px;
-  left: 2.28px;
-`;
+
 
 export const ToggleLink = styled.a`
-  cursor: pointer;
+  font-family: Tenor Sans;
+  text-align: center;
   color: #a0522d;
+  
 ;
-  .gray-text {
-    color: gray;
+.gray-text {
+  color: gray;
   }
 `;
