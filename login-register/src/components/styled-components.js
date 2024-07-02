@@ -2,10 +2,8 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Arial', sans-serif;
     background: url('/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
     padding: 0;
     height: 100%;
   }
@@ -176,13 +174,29 @@ export const SocialIcon = styled.div`
 
 
 
-export const ToggleLink = styled.a`
+export const ToggleLink = styled.span`
   font-family: Tenor Sans;
-  text-align: center;
+  padding-top:10px;
   color: #a0522d;
+  text-align: center;
+  cursor: pointer;
+  gap: 0px;
+  opacity: 0px;
+  font-weight: 400;
+  line-height: 15.21px;
+  text-align: center;
+  text-align: center;
+  margin: 1rem 0; 
+   padding-top: 89px;
+  
+  height: 15px;
+  gap: 0px;
+  opacity: 0px;
   
 ;
 .gray-text {
   color: gray;
+  text-align: center;
+
   }
 `;
