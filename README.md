@@ -1,6 +1,4 @@
-Claro, aqui está o `README.md` para o seu projeto de Tela de Login/Registro:
 
-```markdown
 # Tela de Login/Registro
 
 ## Tarefa: Construção de uma Tela de Login/Registro
